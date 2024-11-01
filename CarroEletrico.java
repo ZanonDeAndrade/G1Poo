@@ -33,8 +33,9 @@ public class CarroEletrico {
     public void realizarViagem(double distancia) {
         if (distancia <= autonomiaAtual) {
             autonomiaAtual -= distancia;
+            System.out.println("Viagem realizada com sucesso! Autonomia restante: " + autonomiaAtual + " km.");
         } else {
-            throw new IllegalArgumentException("Autonomia insuficiente para a viagem.");
+            System.out.println("Autonomia insuficiente para a viagem. Autonomia atual: " + autonomiaAtual + " km.");
         }
     }
 }

@@ -1,18 +1,9 @@
-class CarroCompacto extends CarroEletrico {
-
-    public CarroCompacto(String id, String marca, String modelo, int anoFabricacao, double capacidadeBateria) {
-
-        super(id, marca, modelo, anoFabricacao, capacidadeBateria, 200);
-
+public class CarroCompacto extends CarroEletrico {
+    public CarroCompacto(String id, String marca, String modelo, int anoFabrica, double Bateria) {
+        super(id, marca, modelo, anoFabrica, Bateria, 200);
     }
 
-
-    @Override
-
-    public double getTempoCarga() {
-
-        return 4; // horas
-
+    public double tempoCarga() {
+        return 4.0; // horas
     }
-
 }
