@@ -7,7 +7,7 @@ public class Motorista {
     public Motorista(String nome, String id, String CNH, String nivelExperiencia) {
         this.nome = nome;
         this.id = id;
-        this.carteiraHabilitacao = CNH;
+        this.CNH = CNH;
         this.nivelExperiencia = nivelExperiencia;
     }
 
