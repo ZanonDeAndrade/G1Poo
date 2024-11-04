@@ -4,6 +4,6 @@ public class CarroSedan extends CarroEletrico {
     }
 
     public double tempoCarga() {
-        return 6.0; // horas
+        return 6.0; 
     }
 }

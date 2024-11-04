@@ -41,7 +41,8 @@ public class Main {
             System.out.println("ID: " + carro.getId() + ", Marca: " + carro.getMarca() + ", Modelo: " + carro.getModelo() +
                     ", Ano: " + carro.getAno() + ", Autonomia de: " + carro.getAutonomiaAtual() + " km, " +
                     "Capacidade: " + carro.getBateria() + " kWh, " +
-                    "Categoria: " + carro.getCategoria());
+                    "Categoria: " + carro.getCategoria() + 
+                    ", Bateria Atual: " + carro.getPorcentagemBateriaAtual() + "%");
         }
     }
 
@@ -88,7 +89,7 @@ public class Main {
             CarroEletrico carro = carrosDisponiveis.get(i);
             System.out.println((i + 1) + ". ID: " + carro.getId() + ", Marca: " + carro.getMarca() +
                     ", Modelo: " + carro.getModelo() + ", Bateria: " + carro.getBateria() +
-                    " kWh, Autonomia: " + carro.getAutonomiaAtual() + " km");
+                    " kWh, Autonomia: " + carro.getAutonomiaAtual() + " km" + "Bateria Atual: " + carro.getPorcentagemBateriaAtual());
         }
 
         System.out.print("Escolha o carro desejado (número): ");
@@ -258,7 +259,7 @@ public class Main {
         int opcao;
     
         do {
-            System.out.println("Sistema de Gestão de Frota de Carros Elétricos");
+            System.out.println("-------Sistema de Gestão de Frota de Carros Elétricos--------");
             System.out.println("1. Adicionar carro");
             System.out.println("2. Remover carro");
             System.out.println("3. Exibir carros disponíveis");

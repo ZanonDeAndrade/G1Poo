@@ -1,26 +1,30 @@
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Recarga {
-    private Date data;
-    private String eletroposto;
-    private double quantidadeEnergia;
+    private LocalDateTime dataHora;
+    private double bateriaAntes;
+    private double bateriaDepois;
 
-    public Recarga(Date data, String eletroposto, double quantidadeEnergia) {
-        this.data = data;
-        this.eletroposto = eletroposto;
-        this.quantidadeEnergia = quantidadeEnergia;
+    public Recarga(LocalDateTime dataHora, double bateriaAntes, double bateriaDepois) {
+        this.dataHora = dataHora;
+        this.bateriaAntes = bateriaAntes;
+        this.bateriaDepois = bateriaDepois;
     }
 
-    // Getters
-    public Date getData() {
-        return data;
+    public LocalDateTime getDataHora() {
+        return dataHora;
     }
 
-    public String getEletroposto() {
-        return eletroposto;
+    public double getBateriaAntes() {
+        return bateriaAntes;
     }
 
-    public double getQuantidadeEnergia() {
-        return quantidadeEnergia;
+    public double getBateriaDepois() {
+        return bateriaDepois;
+    }
+
+    @Override
+    public String toString() {
+        return "Data: " + dataHora + ", Bateria antes: " + bateriaAntes + "%, Bateria depois: " + bateriaDepois + "%";
     }
 }

@@ -27,21 +27,9 @@ public class Eletroposto {
         return tempoMedioCarga;
     }
 
-    // Método para alocar uma vaga
-    public boolean alocarVaga() {
-        if (vagasDisponiveis > 0) {
-            vagasDisponiveis--;
-            return true; // Vaga alocada com sucesso
-        }
-        return false; // Sem vagas disponíveis
-    }
 
-    // Método para liberar uma vaga
-    public void liberarVaga() {
-        vagasDisponiveis++;
-    }
 
-    @Override
+
     public String toString() {
         return "Eletroposto ID: " + id + 
                ", Localização: " + local + 

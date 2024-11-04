@@ -17,7 +17,7 @@ public class Motorista {
         this.nivelExperiencia = nivelExperiencia;
     }
 
-    // Getters
+
     public String getNome() {
         return nome;
     }
@@ -34,7 +34,7 @@ public class Motorista {
         return nivelExperiencia;
     }
 
-    // Setters
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -51,7 +51,6 @@ public class Motorista {
         this.nivelExperiencia = nivelExperiencia;
     }
 
-    @Override
     public String toString() {
         return "Motorista{" +
                 "Nome='" + nome + '\'' +
