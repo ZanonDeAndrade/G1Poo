@@ -14,11 +14,8 @@ public class Viagem {
         this.destino = destino;
     }
 
-    public void planejarParadasParaRecarga(List<Eletroposto> eletropostos) {
-        // Implementar lógica para selecionar as paradas de recarga com base na autonomia e disponibilidade
-    }
 
-    // Getters
+
     public Motorista getMotorista() {
         return motorista;
     }
@@ -39,7 +36,7 @@ public class Viagem {
         return paradasParaRecarga;
     }
 
-    // Setters
+
     public void setMotorista(Motorista motorista) {
         this.motorista = motorista;
     }

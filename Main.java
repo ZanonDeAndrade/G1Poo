@@ -238,7 +238,7 @@ public class Main {
         String nivelExperiencia = scanner.nextLine();
     
         Motorista motorista = new Motorista(nome, id, CNH, nivelExperiencia);
-        motoristas.add(motorista); // Agora está correto
+        motoristas.add(motorista); 
         System.out.println("Motorista cadastrado com sucesso!");
     }
     
